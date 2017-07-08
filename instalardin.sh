@@ -44,6 +44,8 @@ sudo apt-get install libjack-dev
 
 sudo apt-get install libjack0
 
+sudo apt-get -f install 
+
 echo instalando subversion 
 
 sudo apt-get install subversion
