@@ -44,6 +44,12 @@ sudo apt-get install libjack-dev
 
 sudo apt-get install libjack0
 
+echo agregando el usuario al grupo audio
+
+sudo adduser $USER audio
+
+echo rectificando paquetes 
+
 sudo apt-get -f install 
 
 echo instalando subversion 
@@ -58,3 +64,4 @@ echo Configurando  din
 
 cd din27a; cp ./src/Makefile.am.linux.tcl85 ./src/Makefile.am; sudo apt-get install dh-autoreconf; autoreconf -fvi; ./configure CXXFLAGS=-O3 CFLAGS=-O3; make 
 
+echo Ahora es mejor que reinicies tu equipo
