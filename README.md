@@ -20,6 +20,8 @@ English\\\\\
 
 Script in bash to install DIN IS NOISE [http://dinisnoise.org/] in operating systems GNU / Linux Debian & Ubuntu [Version Beta 4 ever]
 
+Chose your Distro Debian or Ubuntu
+
 After downloading the file installardin.sh we go to the folder where we downloaded it, we open a terminal to execute a command that gives us the permissions to execute it.
 
 Chmod + x installardin.sh
