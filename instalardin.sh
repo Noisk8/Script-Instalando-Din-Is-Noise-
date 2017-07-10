@@ -36,7 +36,9 @@ echo instalando tcl
 
 sudo apt-get install tcl8.5
 
-echo instalando qjackctl 
+echo instalando jack & qjackctl 
+
+sudo apt-get install jack
 
 sudo apt-get install qjackctl
 
