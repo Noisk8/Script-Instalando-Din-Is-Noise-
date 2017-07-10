@@ -21,6 +21,8 @@ sudo apt-get install freeglut3-dev
 
 sudo apt-get install binutils-gold
 
+sudo apt-get install g++
+
 sudo apt-get install libglew-dev
 
 sudo apt-get install mesa-common-dev
