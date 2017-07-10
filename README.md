@@ -13,5 +13,21 @@ para ejecutarlo
 posteriormente empezará a pedir contraseña, ya que necesita permisos de super usuario para instalar dependencias....
 
 PD: en caso de tener errores Por favor hacer feedback, para mejorar el script !!
+Script in bash to install DIN IS NOISE [http://dinisnoise.org/] in operating systems GNU / Linux Debian & Ubuntu [Version Beta 4 ever]
+
+
+English\\\\\
+
+After downloading the file installardin.sh we go to the folder where we downloaded it, we open a terminal to execute a command that gives us the permissions to execute it.
+
+Chmod + x installardin.sh
+
+To run it
+
+./instalardin.sh
+
+Later it will start to ask for password, since it needs super user permissions to install dependencies ....
+
+PD: in case of errors Please do feedback, to improve the script !!
 
 By Noisk8 /Medellín- 2017
