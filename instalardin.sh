@@ -22,6 +22,8 @@ sudo apt-get install freeglut3-dev
 
 sudo apt-get install binutils-gold
 
+sudo apt-get install g++
+
 sudo apt-get install libglew-dev
 
 sudo apt-get install mesa-common-dev
@@ -64,6 +66,6 @@ svn checkout svn://jagernot.website/home/svn/din/tags/27a
 
 echo Configurando  din
 
-cd din27a; cp ./src/Makefile.am.linux.tcl85 ./src/Makefile.am; sudo apt-get install dh-autoreconf; autoreconf -fvi; ./configure CXXFLAGS=-O3 CFLAGS=-O3; make 
+cd 27a; cp ./src/Makefile.am.linux.tcl85 ./src/Makefile.am; sudo apt-get install dh-autoreconf; autoreconf -fvi; ./configure CXXFLAGS=-O3 CFLAGS=-O3; make 
 
 echo Ahora es mejor que reinicies tu equipo
