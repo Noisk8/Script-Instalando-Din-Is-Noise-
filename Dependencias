@@ -1,0 +1,45 @@
+Dependencias de DIN en Linux 
+
+Librerias Necesarias
+
+
+a. OpenGL (-lGL)
+b. SDL (-lSDL)
+c. TCL (-ltcl)
+d. Boost
+e. JACK (-ljack)
+
+En Debian 
+
+Boost >> libboost-all-dev
+
+SDL >> libsdl1.2-dev
+
+TCL >> tcl-dev
+
+OpenGL >>  freeglut3  freeglut3-dev binutils-gold g++ libglew-dev mesa-common-dev libglew1.5-dev libglm-dev
+
+Jack >>  jack qjackctl libjack-dev libjack0 
+
+En Ubuntu 
+
+Boost >> libboost-all-dev
+
+SDL >> libsdl-dev 
+
+TCL >> tcl-dev
+
+OpenGL >>  freeglut3  freeglut3-dev binutils-gold g++ libglew-dev mesa-common-dev libglew1.5-dev libglm-dev
+
+Jack >>  jack qjackctl libjack-dev libjack0
+ 
+
+Otros paquetes que descarga el script 
+
+Subversion >> Subversion = es utilizado para descargar el codigo fuente e DIN via svn 
+
+Autireconf >> dh-auroreconf = Se utilizar para configurar el codigo fuente de DIN  
+
+
+Como podemos ver el script solo varía en la  linea que llama la libreria sdl que para debian se llama con (libsdl1.2-dev) y en Ubuntu (libsdl-dev)
+
