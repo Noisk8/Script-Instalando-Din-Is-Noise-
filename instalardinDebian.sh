@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo Bienvenido al el scrpit para Instalar Din en Linux Debian y Ubuntu 
+echo Bienvenido al el scrpit para Instalar Din en Linux Debian 
 
 echo Recomendado para versiones Ubuntu mayores de 14.04 
 
