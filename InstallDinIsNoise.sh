@@ -33,6 +33,8 @@ echo installing sdl
 
 sudo apt-get install libsdl2-dev
 
+sudo apt-get install libsdl-dev
+
 echo installing tcl 
 
 sudo apt-get install tcl8.5
