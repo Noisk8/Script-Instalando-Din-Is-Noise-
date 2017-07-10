@@ -1,9 +1,9 @@
 
 #!/bin/bash
 
-echo Welcome to the Din install script X Debian and Ubuntu based GNULinux operating systems
+echo Bienvenidos al script para instalar DIN en Ubuntu
 
-echo Installing dependencies
+echo Instalando dependencias
 
 echo installling  boost 
 
@@ -27,15 +27,15 @@ sudo apt-get install mesa-common-dev
 
 sudo apt-get install libglew1.5-dev libglm-dev
 
-echo installing sdl 
+echo instalando sdl 
 
 sudo apt-get install libsdl-dev
 
-echo installing tcl 
+echo installando tcl 
 
 sudo apt-get install tcl-dev
 
-echo installing jack & qjackctl 
+echo instalandojack & qjackctl 
 
 sudo apt-get install jack
 
@@ -45,24 +45,24 @@ sudo apt-get install libjack-dev
 
 sudo apt-get install libjack0
 
-echo Adding the user to the audio group
+echo Agregando usuario al grupo audio
 
 sudo adduser $USER audio
 
-echo Rectifying packages 
+echo Recttificando paquetes
 
 sudo apt-get -f install 
 
-echo installing subversion 
+echo instalando subversion 
 
 sudo apt-get install subversion
 
-echo Downloading DIN source code
+echo Descargando codigo fuente de DIN 
 
 svn checkout svn://jagernot.website/home/svn/din/tags/27a 
 
-echo setup DIN
+echo COnfigurando DIN
 
 cd 27a; cp ./src/Makefile.am.linux.tcl85 ./src/Makefile.am; sudo apt-get install dh-autoreconf; autoreconf -fvi; ./configure CXXFLAGS=-O3 CFLAGS=-O3; make 
 
-echo Reboot your System 
+echo Reinicia tu equipo
