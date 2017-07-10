@@ -60,7 +60,7 @@ sudo apt-get install subversion
 
 echo descargando codigo fuente de Din
 
-svn checkout svn://jagernot.website/home/svn/din/tags/27a din27a
+svn checkout svn://jagernot.website/home/svn/din/tags/27a 
 
 echo Configurando  din
 
