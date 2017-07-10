@@ -1,6 +1,8 @@
 # Script-Instalando-Din-Is-Noise-
 
-Script en bash para instalar DIN IS NOISE [http://dinisnoise.org/] en sistemas operativos GNU/Linux Debian &amp; Ubuntu [Version Beta 4 ever]
+Script en bash para instalar DIN IS NOISE [http://dinisnoise.org/] en sistemas operativos GNU/Linux Debian yUbuntu [Version Beta 4 ever]
+
+Dependiendo de tu distro elijes el script para instalar en Debian o Ubuntu.
 
 Despues de descargar el archivo instalardin.sh vamos a la carpeta donde la descargamos, abrimos una terminal para ejecutar un comando que nos de los permisos para ejecutarlo. 
 
