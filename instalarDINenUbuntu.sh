@@ -65,4 +65,6 @@ echo COnfigurando DIN
 
 cd 27a; cp ./src/Makefile.am.linux.tcl85 ./src/Makefile.am; sudo apt-get install dh-autoreconf; autoreconf -fvi; ./configure CXXFLAGS=-O3 CFLAGS=-O3; make 
 
-echo Reinicia tu equipo
+cd src/
+
+echo Ahora Arranca el servidor de jack y ejecuta ./din 
