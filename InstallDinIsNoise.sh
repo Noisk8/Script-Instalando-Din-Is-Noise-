@@ -39,7 +39,7 @@ echo installing tcl
 
 sudo apt-get install tcl8.5
 
-echo installing jack & qjackctl 
+echo installing jack  
 
 sudo apt-get install jack
 
@@ -69,4 +69,6 @@ echo setup DIN
 
 cd 27a; cp ./src/Makefile.am.linux.tcl85 ./src/Makefile.am; sudo apt-get install dh-autoreconf; autoreconf -fvi; ./configure CXXFLAGS=-O3 CFLAGS=-O3; make 
 
-echo Reboot your System :)
+cd src/
+
+echo Now run Jack server and run ./din 
