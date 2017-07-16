@@ -1,37 +1,95 @@
-# Script-Instalando-Din-Is-Noise-
+DIN Is Noise, un software en el que Jagnnathan ha estado trabajando por más de 10 años. Originalmente se inspiraron para hacer un instrumento electrónico para usar el ratón del ordenador como un arco para tocar la música clásica india, una tradición musical totalmente microtonal. El software evolucionó para incluir drones microtonales y sus modulaciones a través de transformaciones geométricas animadas en el plano 2D. DIN también incluye Mondrian, un instrumento inspirado en las obras de Piet Mondrian, donde una caja [una caja de vectores en realidad cuya horizontal va de tono microtonal a octava y vertical va de tono a octava] se divide en más cajas con bolas rebotando en sus paredes o techos que emiten Microtones basados en la posición del impacto. El timbre de todo el sonido es proporcionado por las formas de onda de la curva de Bezier, los portadores y los moduladores son formas de onda de la curva de Bezier también las formas 2D pares pueden ser convertidas en formas de onda.
 
-Script en bash para instalar DIN IS NOISE [http://dinisnoise.org/] en sistemas operativos GNU/Linux Debian yUbuntu [Version Beta 4 ever]
+Ver + en http://dinisnoise.org/
 
-Dependiendo de tu distro elijes el script para instalar en Debian o Ubuntu.
+Este script te facilitará las cosas para instalar Din Is Noise en Operativos GNU/linux, a grandes rasgos el script se encarga de descargar las dependencias necesarias del software, descargar el código fuente de Din y compilarlo.
 
-Despues de descargar el archivo instalardin.sh vamos a la carpeta donde la descargamos, abrimos una terminal para ejecutar un comando que nos de los permisos para ejecutarlo. 
+Para poner a correr el script necesitamos varias cosas, lo primero es tener el script en tu ordenador.
 
-chmod +x instalardin.sh
+Dependiendo de tu distro (Debian o Ubuntu) elijes el script correspondiente.
+Puedes obtenerlo 1 creando un archivo vacío en tu laptop y agregando el código correspondiente a tu distro Debian o Ubuntu y llamarlo Ejemplo Debian.sh cómo está en el repositorio.
 
-para ejecutarlo 
+2 Clonando o descargando todo el Repositorio, el resultado es un Script-Instalando-Din-Is-Noise--master.zip, lo extraes y queda una carpeta con el mismo nombre.
 
-./instalardin.sh
+Después de tener el archivo.sh abrimos una terminal para ejecutar un comando que nos de los permisos requeridos por el sistema para ejecutarlo, vamos a la carpeta donde la tenemos ubicado y corremos el siguiente comando
 
-posteriormente empezará a pedir contraseña, ya que necesita permisos de super usuario para instalar dependencias....
+Ejemplo: si el repositorio quedo en descargas la ruta seria algo similar a esto
 
-PD: en caso de tener errores Por favor hacer feedback, para mejorar el script !!
+cd /home/usuario/Descargas/Script-Instalando-Din-Is-Noise--master.
+
+Luego vamos a la carpeta correspondiente a nuestra distro
+
+cd Ubuntu/
+
+chmod +x Ubuntu.sh
+
+Ahora tendremos el script listo para ser ejecutable.
+
+Para ejecutarlo hacemos el siguiente comando
+
+./Ubuntu.sh
+
+posteriormente pedirá la contraseña, ya que necesita permisos de super usuario para instalar las dependencias....
+
+Nota:
+
+El resultado de todo este proceso es una carpeta llamada 27a "la ultima versión estable de Din" dentro de ella se se encuentra otra carpeta llamada src la cual contiene el archivo ejecutable de Din.
+
+Para que Din corra necesitas primero arrancar el servidor de jack, esto puedes intentarlo con el comando.
+
+jackd -R -d alsa
+
+Luego puedes ejecutar Din.
+
+Hecho por Noisk8 Medellín\ 2017
 
 English\\\\\
 
-Script in bash to install DIN IS NOISE [http://dinisnoise.org/] in operating systems GNU / Linux Debian & Ubuntu [Version Beta 4 ever]
+DIN Is Noise, a software in which Jagnnathan has been working for over 10 years. They were originally inspired to make an electronic instrument to use the computer mouse as a bow to play Indian classical music, a totally microtonal musical tradition. The software evolved to include microtonal drones and their modulations through animated geometric transformations in the 2D plane. DIN also includes Mondrian, an instrument inspired by the works of Piet Mondrian, where a box [a vector box in reality whose horizontal goes from microtonal to octave tone and vertical goes from tone to octave] is divided into more boxes with balls bouncing on Its walls or ceilings that emit Microtones based on the position of the impact. The timbre of all sound is provided by the waveforms of the Bezier curve, the carriers and the modulators are waveforms of the Bezier curve also the paired 2D forms can be converted into waveforms.
 
-Chose your Distro Debian or Ubuntu
+See + at http://dinisnoise.org/
 
-After downloading the file installardin.sh we go to the folder where we downloaded it, we open a terminal to execute a command that gives us the permissions to execute it.
+This script will make things easier for you to install Din Is Noise in GNU / Linux operations, the script is basically responsible for downloading the necessary dependencies of the software, downloading the Din source code and compiling it.
 
-Chmod + x installardin.sh
+To run the script we need several things, the first thing is to have the script on your computer.
 
-To run it
+Depending on your distro (Debian or Ubuntu) you choose the corresponding script.
+You can get it 1 by creating an empty file on your laptop and adding the corresponding code to your Debian or Ubuntu distro and call it Debian.sh example how it is in the repository.
 
-./instalardin.sh
+2 Cloning or downloading the whole Repository, the result is a Script-Installing-Din-Is-Noise--master.zip, you extract it and there is a folder with the same name.
 
-Later it will start to ask for password, since it needs super user permissions to install dependencies ....
+After having the file.sh open a terminal to execute a command that gives us the permissions required by the system to execute it, we go to the folder where we have it located and run the following command
 
-PD: in case of errors Please do feedback, to improve the script !!
+Example: if the repository was in downloads the route would be something similar to this
 
-By Noisk8 /Medellín- 2017
+Cd / home / user / Downloads / Script-Install-Din-Is-Noise - master.
+
+Then we go to the folder corresponding to our distro
+
+Cd Ubuntu /
+
+Chmod + x Ubuntu.sh
+
+Now we will have the script ready to be executable.
+
+To execute it we make the following command
+
+./Ubuntu.sh
+
+Then it will ask for the password, since it needs super user permissions to install the dependencies ....
+
+Note:
+
+The result of all this process is a folder called 27a "the last stable version of Din" inside it is located another folder called src which contains the executable file of Din.
+
+For Din to run you need to start the jack server first, you can try this with the command.
+
+Jackd -R -d alsa
+
+Then you can run Din.
+
+
+
+Hecho por Noisk8 / Medellín-Colombia 2017 \
+
+Gracias a La Jaquer EsCool de Platohedro x el espacio. 
