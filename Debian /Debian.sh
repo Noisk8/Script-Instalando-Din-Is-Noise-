@@ -36,6 +36,8 @@ echo Instalando tcl
 
 sudo apt-get install tcl8.5
 
+sudo apt-get install tcl8.5-dev
+
 echo Instalando jack
 
 sudo apt-get install jack
@@ -58,12 +60,11 @@ sudo apt-get install subversion
 
 echo Descargando codigo fuente de Din
 
-svn checkout svn://jagernot.website/home/svn/din/tags/27a
+svn checkout svn://jagernot.website/home/svn/din/trunk/
 
 echo Configurando Din
 
-cd 27a; cp ./src/Makefile.am.linux.tcl85 ./src/Makefile.am; sudo apt-get install dh-autoreconf; autoreconf -fvi; ./configure CXXFLAGS=-O3 CFLAGS=-O3; make
+cd trunk/;  sudo apt-get install dh-autoreconf; autoreconf -fvi; ./configure CXXFLAGS="-O3 -D__LINUX_ALSA__" CFLAGS=-O3
+; make
 
-cd src/
-
-echo Para Correr el ejecutacle de Din ubicado en /27a/src primero necesitas iniciar el servidor de jack
+echo Para Correr el ejecutacle de Din ubicado en /trunk/src/
