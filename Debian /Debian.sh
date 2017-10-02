@@ -64,7 +64,7 @@ svn checkout svn://jagernot.website/home/svn/din/trunk/
 
 echo Configurando Din
 
-cd trunk/;  sudo apt-get install dh-autoreconf; autoreconf -fvi; ./configure CXXFLAGS="-O3 -D__LINUX_ALSA__" CFLAGS=-O3
+cd trunk/;  sudo apt-get install dh-autoreconf; autoreconf -fvi; ./configure CXXFLAGS="-O3 -D__UNIX_JACK__" CFLAGS=-O3
 ; make
 
 echo Para Correr el ejecutacle de Din ubicado en /trunk/src/
