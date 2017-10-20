@@ -36,11 +36,9 @@ sudo apt-get install tcl-dev
 
 echo Instalando jack
 
-sudo apt-get install jack
+sudo apt-get install libjackd2
 
-sudo apt-get install libjack-dev
-
-sudo apt-get install libjack0
+sudo apt-get install libjack-jackd2-dev
 
 echo Agregando usuario al grupo audio
 
@@ -54,14 +52,18 @@ echo Instalando subversion
 
 sudo apt-get install subversion
 
+echo Instalando autoreconf
+
+sudo apt-get install dh-autoreconf
+
 echo Descargando código fuente de DIN
 
-svn checkout svn://jagernot.website/home/svn/din/tags/27a
+svn checkout svn://jagernot.website/home/svn/din/trunk
 
 echo Configurando DIN
 
-cd 27a; cp ./src/Makefile.am.linux.tcl85 ./src/Makefile.am; sudo apt-get install dh-autoreconf; autoreconf -fvi; ./configure CXXFLAGS=-O3 CFLAGS=-O3; make
+cd trunk; autoreconf -fvi; ./configure CXXFLAGS="-O3 -D__UNIX_JACK__" CFLAGS=-O3; make
 
 cd src/
 
-echo  Para Correr el ejecutacle de Din ubicado en /27a/src primero necesitas iniciar el servidor de jack
+
