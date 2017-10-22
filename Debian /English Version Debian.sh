@@ -29,19 +29,23 @@ sudo apt-get install libglew1.5-dev libglm-dev
 
 echo Instaling SDL
 
-sudo apt-get install libsdl2-dev
+sudo apt-get install libsdl
+
+sudo apt-get install libsdl-dev
 
 echo Instaling tcl
 
 sudo apt-get install tcl8.5
 
+sudo apt-get install tcl8.5-dev
+
 echo Instaling jack
 
 sudo apt-get install jack
 
-sudo apt-get install libjack-dev
+sudo apt-get install libjackd2
 
-sudo apt-get install libjack0
+sudo apt-get install libjack-jackd2-dev
 
 echo Adding the user to the audio group
 
@@ -51,18 +55,18 @@ echo Rectifying Packages
 
 sudo apt-get -f install
 
-echo Instaling subversion
+echo Installing subversion and autoreconf
 
 sudo apt-get install subversion
 
-echo Downloading source code from Din
+sudo apt-get install dh-autoreconf
 
-svn checkout svn://jagernot.website/home/svn/din/tags/27a
+echo Downloading DIN source code
 
-echo Configuring Din
+svn checkout svn://jagernot.website/home/svn/din/trunk
 
-cd 27a; cp ./src/Makefile.am.linux.tcl85 ./src/Makefile.am; sudo apt-get install dh-autoreconf; autoreconf -fvi; ./configure CXXFLAGS=-O3 CFLAGS=-O3; make
+echo Configuring DIN
+
+cd trunk; autoreconf -fvi; ./configure CXXFLAGS="-O3 -D__UNIX_JACK__" CFLAGS=-O3; make
 
 cd src/
-
-echo To run the Din executable located in / 27a / src first you need to start the jack server
