@@ -33,7 +33,7 @@ posteriormente pedirá la contraseña, ya que necesita permisos de super usuario
 
 Nota:
 
-El resultado de todo este proceso es una carpeta llamada 27a "la ultima versión estable de Din" dentro de ella se se encuentra otra carpeta llamada src la cual contiene el archivo ejecutable de Din.
+El resultado de todo este proceso es una carpeta llamada trunk "la ultima versión estable de Din" dentro de ella se se encuentra otra carpeta llamada src la cual contiene el archivo ejecutable de Din.
 
 Para que Din corra necesitas primero arrancar el servidor de jack, esto puedes intentarlo con el comando.
 
@@ -80,7 +80,7 @@ Then it will ask for the password, since it needs super user permissions to inst
 
 Note:
 
-The result of all this process is a folder called 27a "the last stable version of Din" inside it is located another folder called src which contains the executable file of Din.
+The result of all this process is a folder called trunk "the last stable version of Din" inside it is located another folder called src which contains the executable file of Din.
 
 For Din to run you need to start the jack server first, you can try this with the command.
 
