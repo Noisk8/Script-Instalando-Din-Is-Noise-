@@ -71,4 +71,6 @@ cd trunk; autoreconf -fvi; ./configure CXXFLAGS="-O3 -D__UNIX_JACK__" CFLAGS=-O3
 
 cd src/
 
+echo reboot
+
 
