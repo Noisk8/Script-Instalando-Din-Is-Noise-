@@ -40,6 +40,10 @@ sudo apt-get install tcl8.5-dev
 
 echo Instalando jack
 
+sudo apt-get install jack
+
+sudo apt-get install libjack-dev
+
 sudo apt-get install libjack-jackd2-dev
 
 sudo apt-get install libjackd2
@@ -56,16 +60,18 @@ echo Instalando subversion
 
 sudo apt-get install subversion
 
-echo Instalando autoreconf
+echo Instalando autoreconf y g++
+
+sudo apt-get install g++
 
 sudo apt-get install dh-autoreconf
 
 echo Descargando codigo fuente de Din
 
-svn checkout svn://jagernot.website/home/svn/din/trunk/
+svn checkout svn://jagernot.website/home/svn/din/wip/
 
 echo Configurando Din
 
-cd trunk/;  autoreconf -fvi; ./configure CXXFLAGS="-O3 -D__UNIX_JACK__" CFLAGS=-O3; make
+cd wip/;  autoreconf -fvi; ./configure CXXFLAGS="-O3 -D__UNIX_JACK__" CFLAGS=-O3; make
 
 
