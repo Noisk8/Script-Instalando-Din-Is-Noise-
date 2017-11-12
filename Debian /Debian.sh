@@ -28,7 +28,7 @@ sudo apt-get install libglew1.5-dev libglm-dev
 
 echo Instalando sdl
 
-sudo apt-get install libsdl.2-dev
+sudo apt-get install libsdl1.2-dev
 
 echo Instalando tcl
 
