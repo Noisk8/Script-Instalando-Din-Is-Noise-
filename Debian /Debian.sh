@@ -72,6 +72,18 @@ svn checkout svn://jagernot.website/home/svn/din/wip/
 
 echo Configurando Din
 
-cd wip/;  autoreconf -fvi; ./configure CXXFLAGS="-O3 -D__UNIX_JACK__" CFLAGS=-O3; make
+cd wip/;  autoreconf -fvi
+
+#Si quieres usarlo con Jack descomenta la siguiente linea
+
+#./configure CXXFLAGS="-O3 -D__UNIX_JACK__" CFLAGS=-O3
+
+./configure CXXFLAGS="-O3 -D__LINUX_ALSA__" CFLAGS=-O3
+
+make
+
+sudo make install
+
+echo Ejecuta din en la terminal y disfruta!
 
 
