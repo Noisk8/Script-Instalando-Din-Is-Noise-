@@ -80,4 +80,4 @@ make
 
 sudo make install
 
-echo Ejecuta din en la terminal y disfruta!
+echo Es recomendable que reinicies tu ordenador y al retornar Ejecuta din en la terminal y disfruta!
