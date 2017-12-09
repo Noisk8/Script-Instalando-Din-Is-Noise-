@@ -33,13 +33,19 @@ posteriormente pedirá la contraseña, ya que necesita permisos de super usuario
 
 Nota:
 
-El resultado de todo este proceso es una carpeta llamada trunk "la ultima versión estable de Din" dentro de ella se se encuentra otra carpeta llamada src la cual contiene el archivo ejecutable de Din.
+El resultado de todo este proceso es una carpeta llamada wip "la ultima versión estable de Din" dentro de ella se se encuentra otra carpeta llamada src la cual contiene el archivo ejecutable de Din.
 
-Para que Din corra necesitas primero arrancar el servidor de jack, esto puedes intentarlo con el comando.
+Nota: El script automaticamente se compilara con alsa, si deseas que corra para jack debes decomentar la linea 
+
+#./configure CXXFLAGS="-O3 -D__UNIX_JACK__" CFLAGS=-O3
+
+y comentar la linea de alsa
+
+Para que Din corra con jack, puedes habilitar el servidor de jack con el comando.
 
 jackd -R -d alsa
 
-Luego puedes ejecutar Din.
+Luego puedes ejecutar din en la terminal.
 
 Hecho por Noisk8 Medellín\ 2017
 
