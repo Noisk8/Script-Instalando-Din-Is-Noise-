@@ -2,14 +2,13 @@ Dependencias de DIN en Linux
 
 Librerias Necesarias
 
+libg1l-mesa-dri
+tcl-dev
+libboost-dev
+libasound2-dev
+libjack-jackd-dev
+libsdl1.2-dev
 
-a. OpenGL (-lGL)
-b. SDL (-lSDL)
-c. TCL (-ltcl)
-d. Boost
-e. JACK (-ljack)
-
-En Debian 
 
 Boost >> libboost-all-dev
 
@@ -17,22 +16,13 @@ SDL >> libsdl1.2-dev
 
 TCL >> tcl-dev
 
-OpenGL >>  freeglut3  freeglut3-dev binutils-gold g++ libglew-dev mesa-common-dev libglew1.5-dev libglm-dev
+OpenGL >>  freeglut3  freeglut3-dev binutils-gold  libglew-dev mesa-common-dev libglew1.5-dev libglm-dev
 
 Jack >>  jack qjackctl libjack-dev libjack0 
 
-En Ubuntu 
+Para la compilaciòn del codigo fuente [g++ autoreconf subversion]
 
-Boost >> libboost-all-dev
 
-SDL >> libsdl-dev 
-
-TCL >> tcl-dev
-
-OpenGL >>  freeglut3  freeglut3-dev binutils-gold g++ libglew-dev mesa-common-dev libglew1.5-dev libglm-dev
-
-Jack >>  jack qjackctl libjack-dev libjack0
- 
 
 Otros paquetes que descarga el script 
 
