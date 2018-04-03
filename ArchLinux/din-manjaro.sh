@@ -1,9 +1,11 @@
 #!/bin/bash
 
+echo Bienvenido al escrito para instalar Din Is Noise en Manjaro-ArchLinux
+
 echo Instalando Boost
-
-echo ELIGE LA OPCION 1 
-
+echo ELIGE LA OPCION 1
+echo ELIGE LA OPCION 1
+echo ELIGE LA OPCION 1 Y PRESIONA ENTER
 yaourt boost
 
 echo Instalando DIN IS NOISE en Manjaro 
@@ -20,3 +22,5 @@ autoreconf -fvi
 make
 
 sudo make install
+
+echo Disfruta 

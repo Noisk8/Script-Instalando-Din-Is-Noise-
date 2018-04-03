@@ -6,7 +6,8 @@ Este script te facilitará las cosas para instalar Din Is Noise en Operativos GN
 
 Para poner a correr el script necesitamos varias cosas, lo primero es tener el script en tu ordenador.
 
-Dependiendo de tu distro (Debian o Ubuntu) elijes el script correspondiente.
+Dependiendo de tu distro (Debian, Ubuntu o ArchLinux) elijes el script correspondiente.
+
 Puedes obtenerlo 1 creando un archivo vacío en tu laptop y agregando el código correspondiente a tu distro Debian o Ubuntu y llamarlo Ejemplo Debian.sh cómo está en el repositorio.
 
 2 Clonando o descargando todo el Repositorio, el resultado es un Script-Instalando-Din-Is-Noise--master.zip, lo extraes y queda una carpeta con el mismo nombre.
@@ -47,7 +48,32 @@ jackd -R -d alsa
 
 Luego puedes ejecutar din en la terminal.
 
-Hecho por Noisk8 Medellín\ 2017
+____________
+En ArchLinux
+------------
+
+Probé instalar Din Is Noise en manjaro 17.1 y es más simple de lo que esperaba, Manjaro viene con "casi" todos las librerias [ sdl tcl opengl ] necesarios instalados.
+
+En mi caso solo uve la necesidad de instalar manualmente boost y luego compilar el código fuente.
+
+También tuve que solucionar algunas conflictos para arrancar con el servidor de jack uno de ellos la ausencia de la linea ( @audio  - rtprio  99 )  en el archivo limits.conf ubicado en /etc/security
+
+Para editar el archivo vamos a necesitar permisos de super usuario entonces vamos a utilizar sudo  para pedir permiso y nano como editor de texto, con la siguiente linea
+
+sudo nano /etc/security/limits.conf
+
+bajamos hasta el final del archivo  y agregamos la linea
+
+@audio  - rtprio  99
+
+Luego tuve que activar agregar el usuario al grupo de audio
+
+sudo usermod -a -G audio nombredelusuario
+
+Arrancar el servidor jac con el comando 
+
+jackd -d alsa 
+
 
 English\\\\\
 
@@ -96,6 +122,6 @@ Then you can run Din.
 
 
 
-Hecho por Noisk8 / Medellín-Colombia 2017 \
+Hecho por Noisk8 / Medellín-Colombia 2017-18 \
 
 Gracias a La Jaquer EsCool de Platohedro x el espacio. 
