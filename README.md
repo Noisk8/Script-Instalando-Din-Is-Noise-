@@ -1,12 +1,21 @@
-DIN Is Noise, un software en el que Jagnnathan ha estado trabajando por más de 10 años. Originalmente se inspiraron para hacer un instrumento electrónico para usar el ratón del ordenador como un arco para tocar la música clásica india, una tradición musical totalmente microtonal. El software evolucionó para incluir drones microtonales y sus modulaciones a través de transformaciones geométricas animadas en el plano 2D. DIN también incluye Mondrian, un instrumento inspirado en las obras de Piet Mondrian, donde una caja [una caja de vectores en realidad cuya horizontal va de tono microtonal a octava y vertical va de tono a octava] se divide en más cajas con bolas rebotando en sus paredes o techos que emiten Microtones basados en la posición del impacto. El timbre de todo el sonido es proporcionado por las formas de onda de la curva de Bezier, los portadores y los moduladores son formas de onda de la curva de Bezier también las formas 2D pares pueden ser convertidas en formas de onda.
+# DIN Is Noise
 
-Ver + en http://dinisnoise.org/
+Es un software en el que Jagnnathan ha estado trabajando por más de 10 años. Originalmente se inspiraron para hacer un instrumento electrónico para usar el ratón del ordenador como un arco para tocar la música clásica india, una tradición musical totalmente microtonal. El software evolucionó para incluir drones microtonales y sus modulaciones a través de transformaciones geométricas animadas en el plano 2D. DIN también incluye Mondrian, un instrumento inspirado en las obras de Piet Mondrian, donde una caja [una caja de vectores en realidad cuya horizontal va de tono microtonal a octava y vertical va de tono a octava] se divide en más cajas con bolas rebotando en sus paredes o techos que emiten Microtones basados en la posición del impacto. El timbre de todo el sonido es proporcionado por las formas de onda de la curva de Bezier, los portadores y los moduladores son formas de onda de la curva de Bezier también las formas 2D pares pueden ser convertidas en formas de onda.
+
+[Din Is Noise] (http://dinisnoise.org/)
+
+***
 
 Este script te facilitará las cosas para instalar Din Is Noise en Operativos GNU/linux, a grandes rasgos el script se encarga de descargar las dependencias necesarias del software, descargar el código fuente de Din y compilarlo.
 
 Para poner a correr el script necesitamos varias cosas, lo primero es tener el script en tu ordenador.
 
 Dependiendo de tu distro (Debian, Ubuntu o ArchLinux) elijes el script correspondiente.
+
+***
+## Guía de utilización 
+
+***
 
 Puedes obtenerlo 1 creando un archivo vacío en tu laptop y agregando el código correspondiente a tu distro Debian o Ubuntu y llamarlo Ejemplo Debian.sh cómo está en el repositorio.
 
@@ -16,27 +25,33 @@ Después de tener el archivo.sh abrimos una terminal para ejecutar un comando qu
 
 Ejemplo: si el repositorio quedo en descargas la ruta seria algo similar a esto
 
-cd /home/usuario/Descargas/Script-Instalando-Din-Is-Noise--master.
+> cd /home/usuario/Descargas/Script-Instalando-Din-Is-Noise--master.
 
 Luego vamos a la carpeta correspondiente a nuestra distro
 
-cd Ubuntu/
+> cd Ubuntu/
 
-chmod +x Ubuntu.sh
+> chmod +x Ubuntu.sh
 
 Ahora tendremos el script listo para ser ejecutable.
 
 Para ejecutarlo hacemos el siguiente comando
 
-./Ubuntu.sh
+> ./Ubuntu.sh
 
 posteriormente pedirá la contraseña, ya que necesita permisos de super usuario para instalar las dependencias....
 
-Nota:
+***
+
+## Nota:
 
 El resultado de todo este proceso es una carpeta llamada wip "la ultima versión estable de Din" dentro de ella se se encuentra otra carpeta llamada src la cual contiene el archivo ejecutable de Din.
 
-Nota: El script automaticamente se compilara con alsa, si deseas que corra para jack debes decomentar la linea 
+***
+
+## Nota: 
+
+El script automaticamente se compilara con alsa, si deseas que corra para jack debes decomentar la linea 
 
 #./configure CXXFLAGS="-O3 -D__UNIX_JACK__" CFLAGS=-O3
 
@@ -48,6 +63,7 @@ jackd -R -d alsa
 
 Luego puedes ejecutar din en la terminal.
 
+***
 ____________
 En ArchLinux
 ------------
