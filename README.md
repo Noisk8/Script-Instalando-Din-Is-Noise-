@@ -2,7 +2,7 @@
 
 Es un software en el que Jagnnathan ha estado trabajando por más de 10 años. Originalmente se inspiraron para hacer un instrumento electrónico para usar el ratón del ordenador como un arco para tocar la música clásica india, una tradición musical totalmente microtonal. El software evolucionó para incluir drones microtonales y sus modulaciones a través de transformaciones geométricas animadas en el plano 2D. DIN también incluye Mondrian, un instrumento inspirado en las obras de Piet Mondrian, donde una caja [una caja de vectores en realidad cuya horizontal va de tono microtonal a octava y vertical va de tono a octava] se divide en más cajas con bolas rebotando en sus paredes o techos que emiten Microtones basados en la posición del impacto. El timbre de todo el sonido es proporcionado por las formas de onda de la curva de Bezier, los portadores y los moduladores son formas de onda de la curva de Bezier también las formas 2D pares pueden ser convertidas en formas de onda.
 
-[Din Is Noise] (http://dinisnoise.org/)
+[Din Is Noise](http://dinisnoise.org/)
 
 ***
 
