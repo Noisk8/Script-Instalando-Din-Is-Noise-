@@ -64,11 +64,11 @@ sudo apt-get install dh-autoreconf
 
 echo Descargando código fuente de DIN
 
-svn checkout svn://jagernot.website/home/svn/din/wip
+wget https://archive.org/download/dinisnoise_source_code/din-35.tar.gz
 
 echo Configurando DIN
 
-cd wip/;  autoreconf -fvi
+cd din-35/;  autoreconf -fvi
 
 #Si quieres usarlo con Jack descomenta la siguiente linea
 
