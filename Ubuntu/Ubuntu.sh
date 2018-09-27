@@ -70,7 +70,7 @@ tar -xvf din-37a/
 
 echo Configurando DIN
 
-cd din-37/;  autoreconf -fvi
+cd din-37a/;  autoreconf -fvi
 
 #Si quieres usarlo con Jack descomenta la siguiente linea
 
