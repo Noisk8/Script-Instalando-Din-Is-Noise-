@@ -68,17 +68,22 @@ sudo apt-get install dh-autoreconf
 
 echo Descargando codigo fuente de Din
 
-svn checkout svn://jagernot.website/home/svn/din/wip/
+wget https://archive.org/download/dinisnoise_source_code/din-38.tar.gz
 
-echo Configurando Din
+tar -xvf din-38.tar.gz
 
-cd wip/;  autoreconf -fvi
+echo Configurando DIN
+
+cd din-38/ 
+
+
+autoreconf -fvi
 
 #Si quieres usarlo con Jack descomenta la siguiente linea
 
-#./configure CXXFLAGS="-O3 -D__UNIX_JACK__" CFLAGS=-O3
+./configure CXXFLAGS="-O3 -D__UNIX_JACK__" CFLAGS=-O3
 
-./configure CXXFLAGS="-O3 -D__LINUX_ALSA__" CFLAGS=-O3
+#./configure CXXFLAGS="-O3 -D__LINUX_ALSA__" CFLAGS=-O3
 
 make
 
