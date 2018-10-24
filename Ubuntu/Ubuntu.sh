@@ -63,15 +63,14 @@ sudo apt-get install g++
 sudo apt-get install dh-autoreconf
 
 echo Descargando código fuente de DIN
-  GNU nano 2.5.3                                                    Archivo: din37.sh                                                                                                                 
+                                                                                                            
+wget https://archive.org/download/dinisnoise_source_code/din-38.tar.gz
 
-wget https://archive.org/download/dinisnoise_source_code/din-37a.tar.gz
-
-tar -xvf din-37a.tar.gz
+tar -xvf din-38.tar.gz
 
 echo Configurando DIN
 
-cd din-37a/ 
+cd din-38/ 
 
 
 autoreconf -fvi
