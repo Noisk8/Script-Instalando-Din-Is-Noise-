@@ -70,11 +70,11 @@ echo Descargando codigo fuente de Din
 
 wget -c https://archive.org/download/dinisnoise_source_code/din-43.0.1.tar.gz
 
-tar -xvf din-43.tar.gz
+tar -xvf din-43.0.1.tar.gz
 
 echo Configurando DIN
 
-cd din-43/
+cd din-43.0.1/
 
 
 autoreconf -fvi
@@ -90,5 +90,4 @@ make
 sudo make install
 
 echo Ejecuta din en la terminal y disfruta!
-
 
