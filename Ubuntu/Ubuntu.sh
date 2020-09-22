@@ -76,7 +76,7 @@ autoreconf -fvi
 
 #Si quieres usarlo con Jack descomenta la siguiente linea
 
-#./configure CXXFLAGS="-O3 -D__UNIX_JACK__" CFLAGS=-O3
+#./configure CXXFLAGS="-O3 -D__UNIX_JACK__" CFLAGS=-O3 LIBS=-ljack
 
 ./configure CXXFLAGS="-O3 -D__LINUX_ALSA__" CFLAGS=-O3
 
