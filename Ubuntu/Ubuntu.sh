@@ -64,21 +64,21 @@ sudo apt-get install dh-autoreconf
 
 echo Descargando código fuente de DIN
                                                                                                             
-wget -c http://archive.org/download/dinisnoise_source_code/din-43.tar.gz
+wget -c http://archive.org/download/dinisnoise_source_code/din-48.tar.gz
 
-tar -xvf din-43.tar.gz
+tar -xvf din-48.tar.gz
 
 echo Configurando DIN
 
-cd din-43/
+cd din-48/
 
 autoreconf -fvi
 
 #Si quieres usarlo con Jack descomenta la siguiente linea
 
-./configure CXXFLAGS="-O3 -D__UNIX_JACK__" CFLAGS=-O3
+#./configure CXXFLAGS="-O3 -D__UNIX_JACK__" CFLAGS=-O3
 
-#./configure CXXFLAGS="-O3 -D__LINUX_ALSA__" CFLAGS=-O3
+./configure CXXFLAGS="-O3 -D__LINUX_ALSA__" CFLAGS=-O3
 
 make
 
