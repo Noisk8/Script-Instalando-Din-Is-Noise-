@@ -64,13 +64,13 @@ sudo apt-get install dh-autoreconf
 
 echo Descargando código fuente de DIN
                                                                                                             
-wget -c http://archive.org/download/dinisnoise_source_code/din-48.tar.gz
+wget -c https://archive.org/download/dinisnoise_source_code/din-49.1.tar.gz
 
-tar -xvf din-48.tar.gz
+tar -xvf din-49.1.tar.gz
 
 echo Configurando DIN
 
-cd din-48/
+cd din-49.1/
 
 autoreconf -fvi
 
